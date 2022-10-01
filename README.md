@@ -4,7 +4,7 @@
 
 ### The Problem
 
-Tagging posts in jekyll is straightforward if you can use [plugins like this one][1]. However, [GitHub Pages only supports a set of whitelisted plugins][2] and I don't see any blog-post-tagging related helpers in that list. To make tags work with GitHub Pages, you need to create an index page for each of your tags, which is painful.
+Tagging posts in jekyll is straightforward if you can use [plugins like this one][1]. However, [GitHub Pages only supports a set of whitelisted plugins][2] and I don't see any blog-post-tagging related helpers in that list. To make tags work with GitHub Pages, you need to create an index page for each of your tags, which is painful. [Read more][3]
 
 ### The Solution
 
@@ -113,3 +113,4 @@ update_tags continuously --template _includes/my_tag_index_page_template.md
 
 [1]: https://github.com/pattex/jekyll-tagging
 [2]: https://pages.github.com/versions/
+[3]: https://pachulski.me/jekyll-blog-post-tags-and-github-pages
