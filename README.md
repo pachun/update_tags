@@ -24,7 +24,7 @@ layout: default
 
 This file defines how your tag index pages will look. You get access to two special variables; `tag` and `tagged_posts`.
 
-Then, [install update_tags](#Install) and run `update_tags continuously` while you work on your jekyll blog. Let's say your create a blog post with tags defined like this in your front matter:
+Then, [install update_tags](#Install) and run `update_tags continuously` while you work on your jekyll blog. Let's say you create a blog post with the following tags in your front matter:
 
 ```
 ---
@@ -32,11 +32,11 @@ tags: ["Test Driven Development", "Ruby"]
 ---
 ```
 
-Two pages will be automatically created using the template defined in `_includes/tag_index_page.md` for each of the two tags. Those pages will be viewable in the browser at `tag/test-driven-development` and `tag/ruby` and will list all the posts with the respective tag.
+Two pages will be automatically created by `update_tags` using the template defined in `_includes/tag_index_page.md` for each of the two tags. You will see them in the browser at `tag/test-driven-development` and `tag/ruby`.
 
 ### Example
 
-If the quick and dirty explanation above in [The Solution](#The Solution) section doesn't make sense yet, try the following to see `update_tags` in action from beginning to finish.
+If the quick and dirty explanation in [The Solution](#The-Solution) section above doesn't make sense yet, try the following to see `update_tags` in action from beginning to end.
 
 Create a new blank jekyll blog:
 
