@@ -43,9 +43,15 @@ class UpdateTags
 
   def tags
     @tags ||= blog_post_filenames.inject([]) do |tags, blog_post_filename|
-      tags += FrontMatterParser::Parser
+      new_tags = (FrontMatterParser::Parser
         .parse_file(blog_post_file(blog_post_filename))
-        .front_matter["tags"]
+        .front_matter["tags"])
+      if new_tags.is_a? String then
+        new_tags = new_tags.split(/[[:space:]]+/)
+      elsif not new_tags.is_a? Array then
+        new_tags = []
+      end
+      tags += new_tags
     end.uniq
   end
 
